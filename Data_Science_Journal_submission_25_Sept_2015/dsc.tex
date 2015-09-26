@@ -1,11 +1,15 @@
-
-\documentclass{sig-alternate}
+\documentclass[12pt]{article}
 
 \usepackage{graphicx}
-\usepackage{datetime}
-\newdateformat{mydate}{\THEDAY\ \monthname[\THEMONTH]\ \THEYEAR}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[style=authoryear, natbib=true, url=false, isbn=false, doi=false, backend=bibtex]{biblatex}
+\usepackage[margin=1in]{geometry}
+\usepackage[doublespacing]{setspace}
 
-
+\renewcommand*{\nameyeardelim}{\addcomma\addspace}
+\bibliography{ZoteroLibrary}
+\renewbibmacro{in:}{}
 
 % arara: pdflatex 
 % arara: bibtex 
@@ -13,60 +17,52 @@
 % arara: pdflatex 
 \begin{document}
 
-\conferenceinfo{Data for Good Exchange 2015,}{New York, NY}
-% \CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
-% \crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+\title{Effective Data Science Education: \\
+\large A Project-Based Case Study Perspective}
 
-\title{Pushing Data Science Education into the Real World}
-% \subtitle{....}
+\author{Daniel Turek$^{*}$, Anthony Suen, Dav Clark}
 
-\numberofauthors{3}
-
-\author{
-\alignauthor
-Daniel Turek\\
-       \affaddr{\small{Berkeley Institute for Data Science}}\\
-       \affaddr{\small{University of California, Berkeley}}\\
-       \affaddr{\small{190 Doe Library, Berkeley, CA}}\\
-       \email{\normalsize{\texttt{dturek@berkeley.edu}}}
-\alignauthor
-Anthony Suen\\
-       \affaddr{\small{Berkeley Institute for Data Science}}\\
-       \affaddr{\small{University of California, Berkeley}}\\
-       \affaddr{\small{190 Doe Library, Berkeley, CA}}\\
-       \email{\normalsize{\texttt{anthonysuen@berkeley.edu}}}
-\alignauthor
-Dav Clark\\
-       \affaddr{\small{Berkeley Institute for Data Science}}\\
-       \affaddr{\small{University of California, Berkeley}}\\
-       \affaddr{\small{190 Doe Library, Berkeley, CA}}\\
-       \email{\normalsize{\texttt{davclark@berkeley.edu}}}
-}
-
-\date{\mydate\today}
-
+\date{}
 
 \maketitle
 
+\vspace{0.4in}
+\begin{center}
 
+Berkeley Institute for Data Science \\
+University of California \\
+Berkeley, CA 94720, USA
+
+\vspace{0.8in}
+
+$^*$Corresponding Author \\
+dturek@berkeley.edu
+\end{center}
+
+\thispagestyle{empty}
+\newpage
 
 \begin{abstract}
-
-The discipline of data science has been viewed as a convergence of high-power computing, data visualization and analysis, and data-driven application domains over the past decade.  Prominent research institutions and private sector industry have embraced data science, but the foundations for effective tertiary-level data science education are conspicuously absent. This is nothing new, however, as the university has a well-established tradition of developing its educational mission hand-in-hand with the development of novel methods for human understanding \cite{feingold_tradition_1991}. Thus, it is natural that universities "figure out" data science concurrent with the development of needed pedagogy. We consider the development of data science education with respect to recent trends in interdisciplinary and experiential methodologies to understand how they could apply to data science education programs. These perspectives motivate us to consider what factors are necessary to drive effective data science education, which range from a complete end-to-end workflow, technological tools for development and team communications, and appropriate motivation and incentives. The first iteration of the \emph{Berkeley Institute for Data Science (BIDS) Collaborative} started in the University of California, Berkeley in the Spring of 2015 is used as a case study. From this, we draw lessons learned and form a hypothesis regarding the necessary ingredients for effective data science education at the tertiary level -- a topic that is presently understudied.  This hypothesis will be tested and revised in subsequent iterations of the BIDS Collaborative as we continue our study of data science education, research, and social impact.
-
+The discipline of data science has been viewed as a convergence of high-power computing, data visualization and analysis, and data-driven application domains over the past decade.  Prominent research institutions and private sector industry have embraced data science, but the foundations for effective tertiary-level data science education are conspicuously absent. This is nothing new, however, as the university has a well-established tradition of developing its educational mission hand-in-hand with the development of novel methods for human understanding \citep{feingold_tradition_1991}. Thus, it is natural that universities "figure out" data science concurrent with the development of needed pedagogy. We consider the development of data science education with respect to recent trends in interdisciplinary and experiential methodologies to understand how they could apply to data science education programs. These perspectives motivate us to consider what factors are necessary to drive effective data science education, which range from a complete end-to-end workflow, technological tools for development and team communications, and appropriate motivation and incentives. The first iteration of the \emph{Berkeley Institute for Data Science (BIDS) Collaborative} started in the University of California, Berkeley in the Spring of 2015 is used as a case study. From this, we draw lessons learned and form a hypothesis regarding the necessary ingredients for effective data science education at the tertiary level -- a topic that is presently understudied.  This hypothesis will be tested and revised in subsequent iterations of the BIDS Collaborative as we continue our study of data science education, research, and social impact.
 \end{abstract}
 
+\vspace{0.4in}
 
+\textbf{Keywords:} \\
+\indent \indent Data science, Education, Case study, Experiential learning
+
+\thispagestyle{empty}
+\newpage
 
 \section{Introduction}
 
-Owing to the rapid advances in computational power and the on-going "big data" craze, the discipline of data science has exploded onto the academic and business landscape. Master's programs in data science are now being offered at leading research institutions such as Stanford University and Columbia University, and centers for data science have recently opened their doors at the University of California, Berkeley, the University of Washington, and New York University. Led  by the success of tech giants such as Google, Amazon and Facebook, the increasing availability of data is transforming industries ranging from medicine to media.  The industrial sector is keeping pace by creating and actively recruiting for positions in data science.  The profession of data scientist was even described by the Harvard Business Review as "the sexiest job of the 21$^{\text{st}}$ century" \cite{Patil2012}.
+Owing to the rapid advances in computational power and the on-going "big data" craze, the discipline of data science has exploded onto the academic and business landscape. Master's programs in data science are now being offered at leading research institutions such as Stanford University and Columbia University, and centers for data science have recently opened their doors at the University of California, Berkeley, the University of Washington, and New York University. Led  by the success of tech giants such as Google, Amazon and Facebook, the increasing availability of data is transforming industries ranging from medicine to media.  The industrial sector is keeping pace by creating and actively recruiting for positions in data science.  The profession of data scientist was even described by the Harvard Business Review as "the sexiest job of the 21$^{\text{st}}$ century" \citep{Patil2012}.
 
-Despite this inundation of the term "data science," we still struggle to define what data science is, or to realize any boundaries as to what data science encompasses \cite{Hayashi1998, Loukides2011, Provost2013}. A common Venn diagram places data science squarely at the intersection of computer science, mathematical statistics, and scientific application domains.  This perhaps most accurately depicts that data science is nebulous by nature, having ties to all areas of quantitative scientific research or computational data analysis, but falls short of providing an understanding of how this new scientific discipline will eventually settle into the scientific ecosystem.  Fortunately, our aim is not to pin down the nature of data science itself, but instead to examine the practicalities and realities of data science education at the tertiary level.
+Despite this inundation of the term "data science," we still struggle to define what data science is, or to realize any boundaries as to what data science encompasses \citep{Hayashi1998, Loukides2011, Provost2013}. A common Venn diagram places data science squarely at the intersection of computer science, mathematical statistics, and scientific application domains.  This perhaps most accurately depicts that data science is nebulous by nature, having ties to all areas of quantitative scientific research or computational data analysis, but falls short of providing an understanding of how this new scientific discipline will eventually settle into the scientific ecosystem.  Fortunately, our aim is not to pin down the nature of data science itself, but instead to examine the practicalities and realities of data science education at the tertiary level.
 
-There exists substantial literature regarding best practices and modern approaches to tertiary education. This has been a subject of interest since the first modern Universities appeared in Europe \cite{Rudy1984, Pedersen1997}.  Since then, the approach to higher education has evolved immensely, due to advances in technology, and also society's attitude towards higher education.  Perhaps the single-most transformative influence on higher education has been the so-called digital revolution of the past decades, which has had a profound impact on the content and style of tertiary education \cite{Roberts1994, Ely1995, Baker1997, Wood2005, Baek2008}.
+There exists substantial literature regarding best practices and modern approaches to tertiary education. This has been a subject of interest since the first modern Universities appeared in Europe \citep{Rudy1984, Pedersen1997}.  Since then, the approach to higher education has evolved immensely, due to advances in technology, and also society's attitude towards higher education.  Perhaps the single-most transformative influence on higher education has been the so-called digital revolution of the past decades, which has had a profound impact on the content and style of tertiary education \citep{Roberts1994, Ely1995, Baker1997, Wood2005, Baek2008}.
 
-Some research suggests that traditional approaches to tertiary education may only result in superficial learning, rather than a deep understanding of subject material \cite{Entwistle1992}.  Thus, the study of education itself is an area of prime interest.  Many approaches have been suggested and studied over the past decades, in attempts to improve tertiary education.  \cite{Topping1996} promotes the practice of peer-tutoring, while others have more recently endorsed "flipped classrooms" in which learning becomes more self-directed (as opposed to instructor-directed) and classrooms become a place for practice instead of lecture \cite{Horn2013, Herreid2013}.  \cite{Ogawa1995} suggests a "mutiscience" approach to multidisciplinary science education, in which the diversity scientific disciplines is recognized and incorporated into the educational system.  Project-based learning has been promoted at the institutional level for many years \cite{Krajcik2006, Thomas2000}.
+Some research suggests that traditional approaches to tertiary education may only result in superficial learning, rather than a deep understanding of subject material \citep{Entwistle1992}.  Thus, the study of education itself is an area of prime interest.  Many approaches have been suggested and studied over the past decades, in attempts to improve tertiary education.  \citet{Topping1996} promotes the practice of peer-tutoring, while others have more recently endorsed "flipped classrooms" in which learning is more self-directed rather than instructor-directed, and classrooms become a place for practice instead of lecture \citep{Horn2013, Herreid2013}.  \citet{Ogawa1995} suggests a "mutiscience" approach to multidisciplinary science education, in which the diversity scientific disciplines is recognized and incorporated into the educational system.  Project-based learning has been promoted at the institutional level for many years \citep{Krajcik2006, Thomas2000}.
 
 The focus of our analysis is specifically the education of data science. In light of the academic and industry spotlight on data science, experiences and best practices for data science education should be an active area of research, just as it is for tertiary education in general.  However, owing to its relatively recent mainstream debut, there is an absence of scientific research or published literature on data science education.  This fact motivates our present analysis of the history, current trends, and future prospects of data science education.
 
@@ -80,11 +76,11 @@ To set the context for data science training and research methods, we briefly re
 
 \subsection{Interdisciplinary Research}
 
-Interdisciplinary or multidisciplinary research is "a format for conversation and connections that will lead to new knowledge" \cite{repko2008interdisciplinary}. The word has been a fashionable academic buzzword for decades now, but the approach of looking at and solving issues from multiple angles has failed to fundamentally scale beyond the confines of certain research groups to change the way research is carried out. There are major obstacles like cultural, organizational, technical barriers that prevent such learning and research environments \cite{eisenberg2000bridging}.
+Interdisciplinary or multidisciplinary research is "a format for conversation and connections that will lead to new knowledge" \citep{repko2008interdisciplinary}. The word has been a fashionable academic buzzword for decades now, but the approach of looking at and solving issues from multiple angles has failed to fundamentally scale beyond the confines of certain research groups to change the way research is carried out. There are major obstacles like cultural, organizational, technical barriers that prevent such learning and research environments \citep{eisenberg2000bridging}.
 
 First, interdisciplinary training is not generally taught, whether you are an undergraduate or graduate student. Interdisciplinary is not a core metric for industry or academic career paths in order to be exposed to the values. This lack of training is due in part to organizational structure with many departments providing little to no incentives for interdisciplinary collaborations. By making job prospects for those who have multidisciplinary focus difficult, it creates a self-propagating cycle that reinforces single disciplinary specialist work. 
 
-These organizational structures also created silos around sets of tools -- different software and methods are used to achieve similar goals via widely divergent means, potentially obscuring the fact that disparate groups are in fact grappling with the same underlying problems. Social scientists, physical sciences, and engineering use very different tools to tackle data. They use these different tools to run models that often have similar predictive goals. For example, Stata \cite{stata2005stata} might be used by an economist, Matlab \cite{incorporation2005matlab} by the engineer, and R \cite{RCoreTeam2014} by the statistician. This divergence and specialization in tools creates an ever widening gap between major disciplines.  These pose obstacles to true interdisciplinary collaboration among diverse teams of researchers.
+These organizational structures also created silos around sets of tools -- different software and methods are used to achieve similar goals via widely divergent means, potentially obscuring the fact that disparate groups are in fact grappling with the same underlying problems. Social scientists, physical sciences, and engineering use very different tools to tackle data. They use these different tools to run models that often have similar predictive goals. For example, Stata \citep{stata2005stata} might be used by an economist, Matlab \citep{incorporation2005matlab} by the engineer, and R \citep{RCoreTeam2014} by the statistician. This divergence and specialization in tools creates an ever widening gap between major disciplines.  These pose obstacles to true interdisciplinary collaboration among diverse teams of researchers.
 
 Observing these barriers to multidisciplinary data science, our mission was three-fold. First, we implemented a framework for interdisciplinary learning beyond traditional academic lecture and coursework structures. Second, we cultivated an environment independent of the "rules" or established incentive structure of traditional academic departments. Our third goal was to show interdisciplinarity was possible with limited resources and incentives, and that data science tools can be readily shared across disciplines. 
 
@@ -92,11 +88,11 @@ This mission highlights a need for leaders within multidisciplinary teams which 
 
 \subsection{Experiential Learning (Flipped Classroom)}
 
-We supported our interdisciplinary mission with projects that were genuinely experientially focused.  This involved external clients and real-world data. Under this model, students no longer played passive roles in the educational process, but instead their active participation drove the educational mechanism \cite{beard2010experiential}. Instead of teachers "transmitting" knowledge, mentors and facilitators ensured that projects and learning were on track, and that needed resources were available. This model for education is also known as a "flipped classroom."
+We supported our interdisciplinary mission with projects that were genuinely experientially focused.  This involved external clients and real-world data. Under this model, students no longer played passive roles in the educational process, but instead their active participation drove the educational mechanism \citep{beard2010experiential}. Instead of teachers "transmitting" knowledge, mentors and facilitators ensured that projects and learning were on track, and that needed resources were available. This model for education is also known as a "flipped classroom."
 
-Research from Stanford University \cite{plotnikoff_classes_2013} has validated that the flipped class experiential learning is a stronger learning strategy compared to the traditional approach of combining lectures and homework. Students being required to actively contribute, without advance lecture preparation has been shown to be effective in accelerating knowledge acquisition. This experiential approach means removing the accepted format of lectures and tests entirely. 
+Research from Stanford University \citep{plotnikoff_classes_2013} has validated that the flipped class experiential learning is a stronger learning strategy compared to the traditional approach of combining lectures and homework. Students being required to actively contribute, without advance lecture preparation has been shown to be effective in accelerating knowledge acquisition. This experiential approach means removing the accepted format of lectures and tests entirely. 
 
-Experiential learning also emphasizes project management, since classroom projects have clear deadlines scheduled imposed by the professor \cite{mok2014teaching}. Given the diverse nature of each project, our limited staffing resources, and the need to manage relationships with clients, it was critical that students (the team leads, in particular) naturally assumed roles as project managers.  The provided the guidance and motivation for teams to push forward throughout the semester, without continuous intervention from facilitators. As an added benefit, the experiential learning approach is also a more realistic representation of practical data science outside the classroom.
+Experiential learning also emphasizes project management, since classroom projects have clear deadlines scheduled imposed by the professor \citep{mok2014teaching}. Given the diverse nature of each project, our limited staffing resources, and the need to manage relationships with clients, it was critical that students -- the team leads, in particular -- naturally assumed roles as project managers.  The provided the guidance and motivation for teams to push forward throughout the semester, without continuous intervention from facilitators. As an added benefit, the experiential learning approach is also a more realistic representation of practical data science outside the classroom.
 
 
 
@@ -104,7 +100,7 @@ Experiential learning also emphasizes project management, since classroom projec
 
 The central organizing principle of the collaborative was to organize teams of students around data science projects. In standard data science education, a common concern is the selection of domain-appropriate materials that will be of interest given a student's background. Thus, one of our primary concerns was to ensure projects that would be of interest to a wide variety of students, and we therefore collected a large, diverse set of 16 projects. 
 
-Based on lessons learned from the DSSG program, we requested that project clients have data ready in hand that they were able to share with student teams. We also attempted to ensure that projects were clearly framed as an answerable question (though as we will discuss below, most projects were more exploratory, and this was not a bad thing). It seems clear in hindsight, however, that student enthusiasm for a project was driven almost entirely by the presence of the "client" to give a pitch to students during one of two informational sessions at the beginning of the semester. Given limited time and resources for managing the Collaborative, most client proposals were not vetted for data availability. Ultimately, four projects received enough interest, along with a project from a team that had already formed prior to their participation in the Collaborative.  These projects are described in greater detail in section~\ref{sec:projects}.
+Based on lessons learned from the DSSG program, we requested that project clients have data ready in hand that they were able to share with student teams. We also attempted to ensure that projects were clearly framed as an answerable question. It seems clear in hindsight, however, that student enthusiasm for a project was driven almost entirely by the presence of the "client" to give a pitch to students during one of two informational sessions at the beginning of the semester. Given limited time and resources for managing the Collaborative, most client proposals were not vetted for data availability. Ultimately, four projects received enough interest, along with a project from a team that had already formed prior to their participation in the Collaborative.  These projects are described in greater detail in section~\ref{sec:projects}.
 
 \subsection{Project Selection and Team Formation}
 
@@ -112,7 +108,7 @@ The BIDS Collaborative ran five projects during the course of the semester, with
 
 Team formation was somewhat chaotic and arguably the most difficult part of the process from the facilitator perspective. Participants were largely attracted via two "mixers" at the beginning of the Spring 2015 semester, which consisted of a brief motivational presentation after which students were encouraged to discuss their research interests, and form teams around one of the available projects. Students were given a large number of choices, and were encouraged to organize themselves via an online spreadsheet. While self-organization might work more efficiently via a system that could enforce a set of rules and policies, allowing all students to collaboratively edit a spreadsheet created numerous problems. The most dramatic difficulty occurred when a large number of student responses were inadvertently deleted from the spreadsheet.
 
-Ultimately, our efforts to create a "self-service" approach required facilitators in the Collaborative (the authors of this paper) to engage in a very time-intensive process, organizing teams via extensive conversations in person and via email. While attendance at the mixers was quite strong, the Collaborative ultimately retained thirteen individuals from the initial cohort, with an additional three joining several weeks into the semester. One individual dropped off mid-semester (this individual was actually staff at Lawrence Berkeley National Labs, and not a student), though participation was otherwise stable thereafter.
+Ultimately, our efforts to create a "self-service" approach required facilitators in the Collaborative to engage in a very time-intensive process, organizing teams via extensive conversations in person and via email. While attendance at the mixers was quite strong, the Collaborative ultimately retained thirteen individuals from the initial cohort, with an additional three joining several weeks into the semester. One individual dropped off mid-semester, though participation was otherwise stable thereafter.
 
 An additional challenge at the beginning of the Spring 2015 semester was the lack of leadership in the various teams. Teams could best be described as loose assemblies of individuals working relatively independently on related topics, and progress was slow. Recognizing this lack of cohesion, we suggested that each team choose a lead -- a process that generally consisted of one person volunteering to take on this role. At least one individual expressed reluctance to engage in a management role, as their interest was largely in hands-on experience \emph{doing data science}. Moreover, after this transition, it was often difficult for these reluctant managers to lead their teams.  At this stage, team leads served a gatekeeper function in allowing students into their team. For these students, the authority of the team lead appeared to be more established. To be clear, "authority" here was very gently exercised, and primarily consisted of working with facilitators to be clear about intended work, and progress achieved. 
 
@@ -126,9 +122,9 @@ For the upcoming Fall 2015 session, we intend to utilize this lesson and focus o
 \label{fig:gitcommits}
 \end{figure*}
 
-While both the facilitators and participating teams were divided on the issue at first, all teams switched to development on GitHub in a matter of weeks. Teams formed in mid-February, and all teams were committing to GitHub by March, consistent with training sessions in using these collaborative tools (Figure~\ref{fig:gitcommits}; note that this data is available for inspection on the public repositories for each project).
+While both the facilitators and participating teams were divided on the issue at first, all teams switched to development on GitHub in a matter of weeks. Teams formed in mid-February, and all teams were committing to GitHub by March, consistent with training sessions in using these collaborative tools (Figure~\ref{fig:gitcommits}; this data is available for inspection on the public repositories for each project).
 
-The diverse skill levels of the participants further complicated training. As such, the start was a bit rocky, and again consisted primarily of smaller-scale coaching from facilitators and mentors. Relatedly, the usage of BIDS space was ad hoc, with some members of the BIDS community finding this usage disruptive. This was addressed by identifying a single weekday where Collaborative participants were particularly encouraged to attend and "take over" the space, and to be particularly conscientious (for example, using private breakout rooms) outside of this time.
+The diverse skill levels of the participants further complicated training. As such, the start was a bit rocky, and again consisted primarily of smaller-scale coaching from facilitators and mentors. Relatedly, the usage of BIDS space was ad hoc, with some members of the BIDS community finding this usage disruptive. This was addressed by identifying a single weekday where Collaborative participants were particularly encouraged to attend and "take over" the space, and to be particularly conscientious outside of this time.
 
 In our upcoming session, we have thus adopted a clear plan that we will establish immediately at the beginning of the semester. Students will be encouraged to come to a practicum on a weekday that will include an initial half-hour of orientation to technical tooling, including project management and documentation.
 
@@ -140,25 +136,25 @@ We now describe the projects which made up the first iteration of the BIDS Colla
 
 The director of the University of California's strategic sourcing unit had a pre-existing connection with the Berkeley D-Lab (\texttt{http://dlab.berkeley.edu/}), primarily via a previous analyst's use of D-Lab python training and consulting. This work led to a conference talk at SciPy 2014 discussing how straightforward scientific python scripts were able to accelerate previously spreadsheet-based analyses from taking approximately a week to a matter of minutes. A Collaborative facilitator assisted strategic sourcing in this work, and was therefore well aware of the opportunities available to save the university system time and money. From the perspective of an academic institution, this project illustrates an exciting double-win, with potential benefits to administration \emph{and} student training. 
 
-We learned from this attempt that it is incredibly hard for a team of graduate students to obtain actionable insights while working only a few hours per week for a semester. Useful progress was made, however, in identifying basic workflows and determining which questions appear to be answerable. In particular, clustering techniques showed promise in identifying non-obvious partnerships where collective purchasing might provide savings. The project was organized at \texttt{https://github.com/berkeley-dsc/purchasing}. One of the clearest patterns in Git commits is observable here (See Figure~\ref{fig:gitcommits}, and also the interactive \emph{graphs} available from the project page), in which the largest initial committer switched to a more managerial role, with a strong secondary contributor and fewer commits from the remaining members.
+We learned from this attempt that it is incredibly hard for a team of graduate students to obtain actionable insights while working only a few hours per week for a semester. Useful progress was made, however, in identifying basic workflows and determining which questions appear to be answerable. In particular, clustering techniques showed promise in identifying non-obvious partnerships where collective purchasing might provide savings. The project was organized at \texttt{https://github.com/berkeley-dsc/purchasing}. This showcases one of the clearest patterns in Git commits (Figure~\ref{fig:gitcommits}, and also the interactive \emph{graphs} available from the project page), in which the largest initial committer switched to a more managerial role, with a strong secondary contributor and fewer commits from the remaining members.
 
 \subsubsection*{Text Mining for Stress}
 
 This was one of two projects that was actually driven by faculty involvement. What differentiated these projects from standard faculty-driven research was the inclusive call for participation, and the engagement in a collaborative open-source development framework. In this case, we pursued a project using Professor John Canny's BIDMach system (\texttt{http://bid2.berkeley.edu/bid-data-project/}; \cite{canny2013bidmach}) -- a performant GPU-accelerated system for machine learning in the Scala language. A domain focus on determining stress and major life events using large-scale machine learning was chosen by one of Professor Canny's graduate students, Pablo Paredes.
 
-The project was enabled in part by providing a commodity workstation (with GPU) that was already available in the D-Lab, with the addition 1TB of hard disk storage. Thus, while this project was pushing the limits of academic machine learning, the resources for this project would be readily accessible to modestly funded labs. This project maintains robust activity, and the participants are working towards several publications resulting from their work. The text mining project and code is organized at \texttt{https://github.com/berkeley-dsc/destress}.
+The project was enabled in part by providing a commodity workstation that was already available in the D-Lab, with the addition 1TB of hard disk storage. Thus, while this project was pushing the limits of academic machine learning, the resources for this project would be readily accessible to modestly funded labs. This project maintains robust activity, and the participants are working towards several publications resulting from their work. The text mining project and code is available at \texttt{https://github.com/berkeley-dsc/destress}.
 
 \subsubsection*{Analyzing Financial Market Data with Spark}
 
-This project was the second of two that was driven by a faculty member, in this case, Professor Justin McCrary, faculty director of the D-Lab. Professor McCrary has been working to develop efficient workflows to take advantage of the UC Berkeley campus compute cluster, Savio. To this end, we worked with the Berkeley Research Computing team that manages the cluster to enable a modern Spark-based workflow (\texttt{http://spark.apache.org/}). Unlike other projects, this initiative had large startup costs, including software installation challenges, and integrating with the traditional HPC Scheduler (Slurm). As such, much of the semester was spent getting to proof-of-concept workflows using Spark to analyze a subset of the data.
+This project was the second of two that was driven by a faculty member, in this case, Professor Justin McCrary, faculty director of the D-Lab. Professor McCrary has been working to develop efficient workflows to take advantage of the UC Berkeley campus compute cluster, Savio. To this end, we worked with the Berkeley Research Computing team that manages the cluster to enable a modern Spark-based workflow (\texttt{http://spark.apache.org/}). Unlike other projects, this initiative had large startup costs, including software installation challenges, and integrating with the traditional HPC Scheduler. As such, much of the semester was spent getting to proof-of-concept workflows using Spark to analyze a subset of the data.
 
 Despite modest progress on the domain questions, this project was likely of the highest value to campus, as it improved the ability to take advantage of the impressive parallel capabilities that are now provided to all senior campus researchers as a "birthright" -- particularly for those users who may need something other than a traditional HPC workflow. This code was maintained and organized at \texttt{https://github.com/berkeley-dsc/dlab-finance}, and has led to continued work in the D-Lab, though \emph{primarily with a different set of contributors}. This transition underscores the value of working in public repositories on genuinely open-ended projects, where new contributors can pick up where previous efforts left off. 
 
 \subsubsection*{Underclub}
 
-While our intention was to primarily recruit clients from outside the university, Underclub was the only client that approximated this intent. Indeed, even they had a pre-existing affiliation with the university via the Haas school of business (the founder was a Haas graduate, and Underclub remains connected to the school). Much as with the strategic sourcing project above, participants struggled to achieve actionable insights, though again promising directions were established. It is clear that more guidance is needed to efficiently connect analysis with potential business-relevant actions.
+While our intention was to primarily recruit clients from outside the university, Underclub was the only client that approximated this intent. Indeed, even they had a pre-existing affiliation with the university via the Haas school of business. Much as with the strategic sourcing project above, participants struggled to achieve actionable insights, though again promising directions were established. It is clear that more guidance is needed to efficiently connect analysis with potential business-relevant actions.
 
-Given the business-related nature of this work, it was carried out in a private repository. This is also standard in programs like DSSG, though efforts were made at the conclusion of this project to create open version of the work for public consumption. A clear shortcoming on this project was the failure to allocate time to "opening up" a repository which would serve as a public record of what this team has done, enabling some of the benefits discussed above. This is understandable, however, given the relatively short time dedicated to these projects (in comparison, DSSG is a full-time residential program with dedicated support staff).
+Given the business-related nature of this work, it was carried out in a private repository. This is also standard in programs like DSSG, though efforts were made at the conclusion of this project to create open version of the work for public consumption. A clear shortcoming on this project was the failure to allocate time to "opening up" a repository which would serve as a public record of what this team has done, enabling some of the benefits discussed above. This is understandable, however, given the relatively short time dedicated to these projects.  In comparison, DSSG is a full-time residential program with dedicated support staff.
 
 
 
@@ -174,7 +170,7 @@ Project and team components needed to be organized in the appropriate order, as 
 
 Along these same lines, we observed that regular interaction between each client and team lead was necessary. The team lead served as the bridge, for processing and presenting the client needs to the team of student researchers.  We learned it was not possible for the Collaborative facilitators to fill this role for several reasons.  First, it was impractical to micro-manage each project at this level.  And second, requiring this direct interaction between clients and team leads formed the reality of students organizing and accomplishing a real-world project.  This provided a sense of responsibility and accomplishment for team leaders and team members, alike.
 
-As projects progressed through the semester, we observed that creating well-defined intermediate goals was helpful to maintain forward momentum within each team.  These took for the form of "milestones" which would otherwise exist in a data science research workflow (\emph{e.g.}, data cleaning, or preliminary visualization analyses), but formally assigning dates for these tasks ensured that each team was progressing forward.  In addition, this helped the Collaborative facilitators passively monitor the progress of individual teams, and provide additional help when necessary.  Larger milestones were also created including mid-semester presentations, and a final capstone event where projects and results were presented to the clients.  The existence of these formal milestones kept all research teams on forward-moving (and similar) timelines.
+As projects progressed through the semester, we observed that creating well-defined intermediate goals was helpful to maintain forward momentum within each team.  These took for the form of "milestones" which would otherwise exist in a data science research workflow (\emph{e.g.}, data cleaning, or preliminary visualization analyses), but formally assigning dates for these tasks ensured that each team was progressing forward.  In addition, this helped the Collaborative facilitators passively monitor the progress of individual teams, and provide additional help when necessary.  Larger milestones were also created including mid-semester presentations, and a final capstone event where projects and results were presented to the clients.  The existence of these formal milestones kept all research teams on similar and timelines.
 
 Finally, we noticed the importance of introducing (and promoting the use of) team collaborative tools from the very beginning.  The most successful project teams immediately adopted GitHub for all project code, and also Slack for team communications.  It appeared that the sooner team members adopted these tools into their research workflows, the sooner meaningful progress began.  We believe it is critical to introduce these tools to students not familiar with them immediately, and promote, if not mandate their usage for teamwork and communications.
 
@@ -198,7 +194,7 @@ In addition, exactly how to motivate a strong commitment from team members is a 
 
 The BIDS Collaborative was a small educational experiment done in BIDS with a bare bones staff and limited planning. We did not have the resources of the DSSG program, but we were successful in motivating a group of students to complete client provided real-world data science problems over the course of an academic semester.  The design and overall success of the BIDS Collaborative program shows promise in terms of scalability among the wider university.
 
-In addition, the first iteration of the Collaborative brought a variety of practical considerations for effective data science education to light.  Perhaps foremost is the importance of having real-world projects, which represent interested clients and are backed by accessible data, ready at hand.  Forethought about the relationships and communication lines between clients, projects team leads, and team members was also proved surprisingly important for the smooth operation of the research teams.  Finally, the early introduction of the appropriate technical tools (and training for these tools, if necessary) was also necessary for effective team dynamics.
+In addition, the first iteration of the Collaborative brought a variety of practical considerations for effective data science education to light.  Perhaps foremost is the importance of having real-world projects, which represent interested clients and are backed by accessible data, ready at hand.  Forethought about the relationships and communication lines between clients, projects team leads, and team members was also proved surprisingly important for the smooth operation of the research teams.  Finally, the early introduction and training of the appropriate technical tools was also necessary for effective team dynamics.
 
 We hypothesize that effective multidisciplinary data science education must address the complexities which are fundamental to both technical research and human team dynamics. This requires imposing a structured hierarchy for client-team dynamics, augmented with workshops and consulting services to provide the resources necessary for productive research, and most importantly, we note the value of a capstone collaborative project which provides genuinely experiential learning, which we feel is most beneficial for effective data science education.
 
@@ -207,16 +203,13 @@ Stepping back, we have determined best practices from the various approaches app
 
 
 
+\newpage
 
-%\section{Acknowledgments}
-% anything?
+%\bibliographystyle{apa}
+%\bibliography{ZoteroLibrary}
 
-
-
-\bibliographystyle{abbrv}
-\bibliography{ZoteroLibrary}
-
-
+\newpage
+\printbibliography
 
 \end{document}
 
