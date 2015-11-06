@@ -1,7 +1,8 @@
 *.aux
 *.bbl
 *.blg
-*.blx.bib
+*-blx.bib
+*.gz
 *.log
 *.dvi
 *.xml
