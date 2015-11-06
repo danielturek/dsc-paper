@@ -8,6 +8,6 @@ nall:
 	open dsc.pdf
 
 clean:
-	rm -f *.aux *.blg *.log *.dvi *.run.xml *-blx.bib
+	rm -f *.aux *.blg *.log *.dvi *.run.xml *-blx.bib *.synctex.gz
 
 
