@@ -1,0 +1,1066 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Baek2008}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Baek}{B.}%
+     {Youngkyun}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jung}{J.}%
+     {Jaeyeob}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kim}{K.}%
+     {Bokyeong}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Factors affecting technology use,Technology in education,Technology use
+  in the classroom}
+  \strng{namehash}{BYJJKB1}
+  \strng{fullhash}{BYJJKB1}
+  \field{labelyear}{2008}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  The purpose of this study was to identify factors influencing teachers’
+  decisions about using technology in the classroom setting and examine the
+  degree to which teaching experience affects these decisions. Specifically,
+  the items employed in this study were derived from the teachers’
+  perceptions of technology use. We discovered six factors which influenced
+  teachers use technology in their classroom: adapting to external requests and
+  others’ expectations, deriving attention, using the basic functions of
+  technology, relieving physical fatigue, class preparation and management, and
+  using the enhanced functions of technology. Interestingly, these factors do
+  not correspond to the common sense theory of instructional technology.
+  Additionally, we analyzed the patterns of factors’ scores by teachers’
+  level of teaching experience. From this study we deduced that although the
+  majority of teachers intend to use technology to support teaching and
+  leaning, experienced teachers generally decide to use technology
+  involuntarily in response to external forces while teachers with little
+  experience are more likely to use it on their own will.%
+  }
+  \verb{doi}
+  \verb 10.1016/j.compedu.2006.05.002
+  \endverb
+  \field{issn}{0360-1315}
+  \field{number}{1}
+  \field{pages}{224\bibrangedash 234}
+  \field{shortjournal}{Computers \& Education}
+  \field{shorttitle}{What makes teachers use technology in the classroom?}
+  \field{title}{What makes teachers use technology in the classroom? Exploring
+  the factors affecting facilitation of technology with a Korean sample}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S036013150600100X
+  \endverb
+  \field{volume}{50}
+  \verb{file}
+  \verb ScienceDirect Snapshot:/Users/dturek/Library/Application Support/Zotero
+  \verb /Profiles/mb0txt09.default/zotero/storage/BQSWTFG7/login.html:text/html
+  \endverb
+  \field{journaltitle}{Computers \& Education}
+  \field{month}{01}
+  \field{year}{2008}
+  \field{urlday}{10}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Baker1997}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Baker}{B.}%
+     {Warren}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BW1}
+  \strng{fullhash}{BW1}
+  \field{labelyear}{1997}
+  \field{sortinit}{B}
+  \field{number}{5}
+  \field{shortjournal}{Educom Rev.}
+  \field{title}{Technology in the Classroom: From Theory to Practice}
+  \field{volume}{32}
+  \field{journaltitle}{Educom Review}
+  \field{year}{1997}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{beard2010experiential}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Beard}{B.}%
+     {Colin}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Kogan Page Publishers}%
+  }
+  \strng{namehash}{BC1}
+  \strng{fullhash}{BC1}
+  \field{labelyear}{2010}
+  \field{sortinit}{B}
+  \field{title}{The experiential learning toolkit: Blending practice with
+  concepts}
+  \field{year}{2010}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{biggs2003aligning}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Biggs}{B.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{labelyear}{2003}
+  \field{sortinit}{B}
+  \field{title}{Aligning teaching and assessment to curriculum objectives}
+  \field{volume}{12}
+  \field{journaltitle}{Imaginative Curriculum Project, LTSN Generic Centre}
+  \field{year}{2003}
+\endentry
+
+\entry{biggs2011teaching}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Biggs}{B.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tang}{T.}%
+     {Catherine}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {McGraw-Hill Education (UK)}%
+  }
+  \strng{namehash}{BJTC1}
+  \strng{fullhash}{BJTC1}
+  \field{labelyear}{2011}
+  \field{sortinit}{B}
+  \field{title}{Teaching for quality learning at university}
+  \field{year}{2011}
+\endentry
+
+\entry{canny2013bidmach}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Canny}{C.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhao}{Z.}%
+     {Huasha}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CJZH1}
+  \strng{fullhash}{CJZH1}
+  \field{labelyear}{2013}
+  \field{sortinit}{C}
+  \field{booktitle}{{BigLearning}, {NIPS} Workshop}
+  \field{title}{Bidmach: Large-scale learning with zero memory allocation}
+  \field{year}{2013}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{dabbish2012social}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dabbish}{D.}%
+     {Laura}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stuart}{S.}%
+     {Colleen}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsay}{T.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herbsleb}{H.}%
+     {Jim}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{DL+1}
+  \strng{fullhash}{DLSCTJHJ1}
+  \field{labelyear}{2012}
+  \field{sortinit}{D}
+  \field{booktitle}{Proceedings of the ACM 2012 conference on Computer
+  Supported Cooperative Work}
+  \field{pages}{1277\bibrangedash 1286}
+  \field{title}{Social coding in GitHub: transparency and collaboration in an
+  open software repository}
+  \field{year}{2012}
+\endentry
+
+\entry{eisenberg2000bridging}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Eisenberg}{E.}%
+     {Leon}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pellmar}{P.}%
+     {Terry~C}{T.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {National Academies Press}%
+  }
+  \strng{namehash}{ELPTC1}
+  \strng{fullhash}{ELPTC1}
+  \field{labelyear}{2000}
+  \field{sortinit}{E}
+  \field{title}{Bridging disciplines in the brain, behavioral, and clinical
+  sciences}
+  \field{year}{2000}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Ely1995}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ely}{E.}%
+     {Donald~P.}{D.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EDP1}
+  \strng{fullhash}{EDP1}
+  \field{labelyear}{1995}
+  \field{sortinit}{E}
+  \field{abstract}{%
+  This paper examines how, why, and by whom technology is being used in
+  schools. Educational technology is defined as the systematic design and use
+  of hardware and software to achieve specific objectives. Recent studies
+  indicate that the most frequent location of computers in schools is in the
+  administrative office; second is in the library media center and third in a
+  computer lab. Computers are used mostly for word processing, followed by
+  drill and practice and educational games. The following rationales for using
+  computers in schools are identified: social, vocational, pedagogic, and
+  catalytic. In the United States, the social and vocational rationales are
+  dominant. Some studies show that computer-based programs in elementary
+  education benefit only the highest scoring students and students taught by
+  teachers most knowledgeable about the computer system being used; in colleges
+  and universities only about 10 percent of the faculty use technology in the
+  classroom. Factors that%
+  }
+  \field{shorttitle}{Technology Is the Answer! But What Was the Question?}
+  \field{title}{Technology Is the Answer! But What Was the Question?}
+  \verb{url}
+  \verb http://eric.ed.gov/?id=ED381152
+  \endverb
+  \field{langid}{english}
+  \verb{file}
+  \verb Full Text PDF:/Users/dturek/Library/Application Support/Zotero/Profiles
+  \verb /mb0txt09.default/zotero/storage/DF8FWMWR/Ely - 1995 - Technology Is th
+  \verb e Answer! But What Was the Questio.pdf:application/pdf;Snapshot:/Users/
+  \verb dturek/Library/Application Support/Zotero/Profiles/mb0txt09.default/zot
+  \verb ero/storage/CTDN3ZBE/eric.ed.gov.html:text/html
+  \endverb
+  \field{day}{14}
+  \field{month}{04}
+  \field{year}{1995}
+  \field{urlday}{10}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Entwistle1992}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Entwistle}{E.}%
+     {Noel~James}{N.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {Committee of Vice-Chancellors}%
+    {Principals of the Universities of the United Kingdom, Universities' Staff
+  Development Unit}%
+  }
+  \strng{namehash}{ENJ1}
+  \strng{fullhash}{ENJ1}
+  \field{labelyear}{1992}
+  \field{sortinit}{E}
+  \field{title}{The impact of teaching on learning outcomes in higher
+  education: a literature review}
+  \field{year}{1992}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{feingold_tradition_1991}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Feingold}{F.}%
+     {Mordechai}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FM1}
+  \strng{fullhash}{FM1}
+  \field{labelyear}{1991}
+  \field{sortinit}{F}
+  \field{pages}{45\bibrangedash 62}
+  \field{shorttitle}{Tradition versus {Novelty}}
+  \field{title}{Tradition versus {Novelty}: {Universities} and {Scientific}
+  {Societies} in the {Early} {Modern} {Period}}
+  \field{journaltitle}{Revolution and Continuity: Essays in the History and
+  Philosophy of Early Modern Science}
+  \field{year}{1991}
+\endentry
+
+\entry{felicia2011handbook}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Felicia}{F.}%
+     {Patrick}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IGI Global}%
+  }
+  \strng{namehash}{FP1}
+  \strng{fullhash}{FP1}
+  \field{labelyear}{2011}
+  \field{sortinit}{F}
+  \field{title}{Handbook of Research on Improving Learning and Motivation
+  through Educational Games: Multidisciplinary Approaches: Multidisciplinary
+  Approaches}
+  \field{year}{2011}
+\endentry
+
+\entry{Hayashi1998}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hayashi}{H.}%
+     {Chikio}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{6}{}{%
+    {{}%
+     {Hayashi}{H.}%
+     {Prof Emeritus~Chikio}{P.~E.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yajima}{Y.}%
+     {Prof~Keiji}{P.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bock}{B.}%
+     {Prof Hans-Hermann}{P.~H.-H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ohsumi}{O.}%
+     {Prof~Noboru}{P.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tanaka}{T.}%
+     {Prof~Yutaka}{P.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baba}{B.}%
+     {Prof~Yasumasa}{P.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Japan}%
+  }
+  \keyw{Data Structures,Economic Theory,Statistics, general}
+  \strng{namehash}{HC1}
+  \strng{fullhash}{HC1}
+  \field{labelyear}{1998}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  Data Science is not only a synthetic concept to unify statistics, data
+  analysis and their related methods but also comprises its results. It
+  includes three phases, design for data, collection of data, and analysis on
+  data. Fundamental concepts and various methods based on it are discussed with
+  a heuristic example.%
+  }
+  \field{booktitle}{Data Science, Classification, and Related Methods}
+  \field{isbn}{978-4-431-70208-5 978-4-431-65950-1}
+  \field{pages}{40\bibrangedash 51}
+  \field{series}{Studies in Classification, Data Analysis, and Knowledge
+  Organization}
+  \field{shorttitle}{What is Data Science ?}
+  \field{title}{What is Data Science? Fundamental Concepts and a Heuristic
+  Example}
+  \verb{url}
+  \verb http://link.springer.com/chapter/10.1007/978-4-431-65950-1_3
+  \endverb
+  \field{langid}{english}
+  \verb{file}
+  \verb Snapshot:/Users/dturek/Library/Application Support/Zotero/Profiles/mb0t
+  \verb xt09.default/zotero/storage/9B2BJMFZ/login.html:text/html
+  \endverb
+  \field{year}{1998}
+  \field{urlday}{07}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Herreid2013}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Herreid}{H.}%
+     {Clyde~Freeman}{C.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schiller}{S.}%
+     {Nancy~A}{N.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HCFSNA1}
+  \strng{fullhash}{HCFSNA1}
+  \field{labelyear}{2013}
+  \field{sortinit}{H}
+  \field{number}{5}
+  \field{pages}{62\bibrangedash 66}
+  \field{shortjournal}{J. Coll. Sci. Teach.}
+  \field{title}{Case studies and the flipped classroom}
+  \field{volume}{42}
+  \field{journaltitle}{Journal of College Science Teaching}
+  \field{year}{2013}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Horn2013}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Horn}{H.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HM1}
+  \strng{fullhash}{HM1}
+  \field{labelyear}{2013}
+  \field{sortinit}{H}
+  \field{number}{3}
+  \field{pages}{78\bibrangedash 79}
+  \field{shortjournal}{Educ. Next}
+  \field{title}{The transformational potential of flipped classrooms}
+  \field{volume}{13}
+  \field{journaltitle}{Education Next}
+  \field{year}{2013}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Krajcik2006}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Krajcik}{K.}%
+     {Joseph~S}{J.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Blumenfeld}{B.}%
+     {Phyllis~C}{P.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJSBPC1}
+  \strng{fullhash}{KJSBPC1}
+  \field{labelyear}{2006}
+  \field{sortinit}{K}
+  \field{title}{Project-based learning}
+  \field{year}{2006}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Loukides2011}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Loukides}{L.}%
+     {Mike}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {O'Reilly Media, Inc.}%
+  }
+  \strng{namehash}{LM1}
+  \strng{fullhash}{LM1}
+  \field{labelyear}{2011}
+  \field{sortinit}{L}
+  \field{title}{What is data science?}
+  \field{year}{2011}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{incorporation2005matlab}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Math Works Incorporation}}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{M1}
+  \strng{fullhash}{M1}
+  \field{labelyear}{2005}
+  \field{sortinit}{M}
+  \field{shortjournal}{Math Works Inc. Natick {MA}}
+  \field{title}{{MATLAB} user manual version 7.1 R14}
+  \field{journaltitle}{Math Works Incorporation, Natick, {MA}}
+  \field{year}{2005}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{mit_news_flipped_2014}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Miyagawa}{M.}%
+     {Shigeru}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MS1}
+  \strng{fullhash}{MS1}
+  \field{labelyear}{2014}
+  \field{sortinit}{M}
+  \field{title}{A MOOC sees its greatest impact in the classroom at MIT}
+  \verb{url}
+  \verb http://news.mit.edu/2014/mooc-sees-its-greatest-impact-classroom-mit-11
+  \verb 14
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{mok2014teaching}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mok}{M.}%
+     {Heng~Ngee}{H.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MHN1}
+  \strng{fullhash}{MHN1}
+  \field{labelyear}{2014}
+  \field{sortinit}{M}
+  \field{number}{1}
+  \field{pages}{7}
+  \field{shortjournal}{J. Inf. Syst. Educ.}
+  \field{title}{Teaching tip: The flipped classroom}
+  \field{volume}{25}
+  \field{journaltitle}{Journal of Information Systems Education}
+  \field{year}{2014}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Ogawa1995}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ogawa}{O.}%
+     {Masakata}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OM1}
+  \strng{fullhash}{OM1}
+  \field{labelyear}{1995}
+  \field{sortinit}{O}
+  \field{number}{5}
+  \field{pages}{583\bibrangedash 593}
+  \field{shortjournal}{Sci. Educ.}
+  \field{title}{Science education in a multiscience perspective}
+  \field{volume}{79}
+  \field{journaltitle}{Science Education}
+  \field{year}{1995}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Patil2012}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Patil}{P.}%
+     {Thomas H. {DavenportD}~J.}{T.~H. D.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PTHDJ1}
+  \strng{fullhash}{PTHDJ1}
+  \field{labelyear}{2012}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  Meet the people who can coax treasure out of messy, unstructured data.%
+  }
+  \field{shorttitle}{Data Scientist}
+  \field{titleaddon}{Harvard Business Review}
+  \field{title}{Data Scientist: The Sexiest Job of the 21st Century}
+  \field{year}{2012}
+\endentry
+
+\entry{Pedersen1997}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pedersen}{P.}%
+     {Olaf}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge University Press}%
+  }
+  \keyw{Education / Higher,Education / History,History / Europe /
+  General,History / Medieval}
+  \strng{namehash}{PO1}
+  \strng{fullhash}{PO1}
+  \field{labelyear}{1997}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  This is a general study of the development of higher education in Europe from
+  antiquity until the end of the Middle Ages, set against a background of the
+  social and political history of the period. It shows how the slender
+  traditions of ancient learning, kept alive in the monastic and cathedral
+  schools, was enriched by an enormous influx of knowledge from the Islamic
+  world and how in consequence the schools developed into universities. These
+  early institutions are examined from a variety of points of view, as
+  institutions, as places where ideas spread and as points of interaction with
+  local and national authority. Special attention is paid to early intellectual
+  history and to the scientific disciplines and to the everyday life of the
+  students and their teachers. The book is intended as a broad introduction to
+  the subject for students of the history of education, but it will also
+  attract general readers with only a slight knowledge of the subject.%
+  }
+  \field{isbn}{978-0-521-59431-8}
+  \field{pagetotal}{328}
+  \field{shorttitle}{The First Universities}
+  \field{title}{The First Universities: Studium Generale and the Origins of
+  University Education in Europe}
+  \field{langid}{english}
+  \field{year}{1997}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{plotnikoff_classes_2013}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Plotnikoff}{P.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PD1}
+  \strng{fullhash}{PD1}
+  \field{labelyear}{2013}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  A study of how students best learned a neuroscience lesson showed a distinct
+  benefit to starting out by working with an interactive 3D model of the
+  brain.%
+  }
+  \field{titleaddon}{Stanford University}
+  \field{title}{Classes should do hands-on exercises before reading and video,
+  Stanford researchers say}
+  \verb{url}
+  \verb http://news.stanford.edu/news/2013/july/flipped-learning-model-071613.h
+  \verb tml
+  \endverb
+  \field{day}{16}
+  \field{month}{07}
+  \field{year}{2013}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Provost2013}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Provost}{P.}%
+     {Foster}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fawcett}{F.}%
+     {Tom}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PFFT1}
+  \strng{fullhash}{PFFT1}
+  \field{labelyear}{2013}
+  \field{sortinit}{P}
+  \field{abstract}{%
+  Companies have realized they need to hire data scientists, academic
+  institutions are scrambling to put together data-science programs, and
+  publications are touting data science as a hot—even “sexy”—career
+  choice. However, there is confusion about what exactly data science is, and
+  this confusion could lead to disillusionment as the concept diffuses into
+  meaningless buzz. In this article, we argue that there are good reasons why
+  it has been hard to pin down exactly what is data science. One reason is that
+  data science is intricately intertwined with other important concepts also of
+  growing importance, such as big data and data-driven decision making. Another
+  reason is the natural tendency to associate what a practitioner does with the
+  definition of the practitioner's field; this can result in overlooking the
+  fundamentals of the field. We believe that trying to define the boundaries of
+  data science precisely is not of the utmost importance. We can debate the
+  boundaries of the field in an academic setting, but in order for data science
+  to serve business effectively, it is important (i) to understand its
+  relationships to other important related concepts, and (ii) to begin to
+  identify the fundamental principles underlying data science. Once we embrace
+  (ii), we can much better understand and explain exactly what data science has
+  to offer. Furthermore, only once we embrace (ii) should we be comfortable
+  calling it data science. In this article, we present a perspective that
+  addresses all these concepts. We close by offering, as examples, a partial
+  list of fundamental principles underlying data science.%
+  }
+  \verb{doi}
+  \verb 10.1089/big.2013.1508
+  \endverb
+  \field{issn}{2167-6461}
+  \field{number}{1}
+  \field{pages}{51\bibrangedash 59}
+  \field{shortjournal}{Big Data}
+  \field{title}{Data Science and its Relationship to Big Data and Data-Driven
+  Decision Making}
+  \verb{url}
+  \verb http://online.liebertpub.com/doi/abs/10.1089/big.2013.1508
+  \endverb
+  \field{volume}{1}
+  \verb{file}
+  \verb Snapshot:/Users/dturek/Library/Application Support/Zotero/Profiles/mb0t
+  \verb xt09.default/zotero/storage/W7ACQB7M/login.html:text/html
+  \endverb
+  \field{journaltitle}{Big Data}
+  \field{day}{13}
+  \field{month}{02}
+  \field{year}{2013}
+  \field{urlday}{07}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{RCoreTeam2014}{collection}{}
+  \name{editor}{1}{}{%
+    {{}%
+     {{R Core Team}}{R.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {R Foundation for Statistical Computing}%
+  }
+  \strng{namehash}{R1}
+  \strng{fullhash}{R1}
+  \field{labelyear}{2014}
+  \field{sortinit}{R}
+  \field{title}{R: A Language and Environment for Statistical Computing}
+  \list{location}{1}{%
+    {Vienna, Austria}%
+  }
+  \field{year}{2014}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{repko2008interdisciplinary}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Repko}{R.}%
+     {Allen~F}{A.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Sage}%
+  }
+  \strng{namehash}{RAF1}
+  \strng{fullhash}{RAF1}
+  \field{labelyear}{2008}
+  \field{sortinit}{R}
+  \field{title}{Interdisciplinary research: Process and theory}
+  \field{year}{2008}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Roberts1994}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Roberts}{R.}%
+     {Nancy}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ferris}{F.}%
+     {Angeline}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Adoption (Ideas),Computer Assisted Instruction,Computer
+  Literacy,Courseware,Curriculum Development,Educational Objectives,Educational
+  Technology,Elementary Secondary Education,Higher Education,Inservice Teacher
+  Education,Preservice Teacher Education,Problems,Teacher
+  Attitudes,Technological Advancement}
+  \strng{namehash}{RNFA1}
+  \strng{fullhash}{RNFA1}
+  \field{labelyear}{1994}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  Describes attempts to integrate computer technology into the preservice
+  teacher education program at Lesley College. Topics discussed include
+  technology goals; faculty attitudes; technology in the schools; technological
+  developments; problems; and factors affecting adoption of computer
+  technology, including the need for faculty to learn more about hardware and
+  software. (six references) (LRW)%
+  }
+  \field{issn}{1059-7069}
+  \field{number}{3}
+  \field{pages}{215\bibrangedash 25}
+  \field{shortjournal}{J. Technol. Teach. Educ.}
+  \field{title}{Integrating Technology into a Teacher Education Program}
+  \field{volume}{2}
+  \field{langid}{english}
+  \verb{file}
+  \verb Snapshot:/Users/dturek/Library/Application Support/Zotero/Profiles/mb0t
+  \verb xt09.default/zotero/storage/ADB8ZM8R/eric.ed.gov.html:text/html
+  \endverb
+  \field{journaltitle}{Journal of Technology and Teacher Education}
+  \field{month}{01}
+  \field{year}{1994}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Rudy1984}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rudy}{R.}%
+     {Willis}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Fairleigh Dickinson University Press}%
+  }
+  \strng{namehash}{RW1}
+  \strng{fullhash}{RW1}
+  \field{labelyear}{1984}
+  \field{sortinit}{R}
+  \field{title}{The universities of Europe, 1100-1914: a history}
+  \field{year}{1984}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{stata2005stata}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Stata Corporation}}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Stata Press Publication}%
+  }
+  \strng{namehash}{S1}
+  \strng{fullhash}{S1}
+  \field{labelyear}{2005}
+  \field{sortinit}{S}
+  \field{title}{Stata Statistical Software Release 9}
+  \field{year}{2005}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Thomas2000}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Thomas}{T.}%
+     {John~W}{J.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TJW1}
+  \strng{fullhash}{TJW1}
+  \field{labelyear}{2000}
+  \field{sortinit}{T}
+  \field{title}{A review of research on project-based learning}
+  \field{year}{2000}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Topping1996}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Topping}{T.}%
+     {K.~J.}{K.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Education (general),Psychology, general}
+  \strng{namehash}{TKJ1}
+  \strng{fullhash}{TKJ1}
+  \field{labelyear}{1996}
+  \field{sortinit}{T}
+  \field{abstract}{%
+  Quality, outcomes and cost-effectiveness of methods of teaching and learning
+  in colleges and universities are being scrutinised more closely. The
+  increasing use of peer tutoring in this context necessitates a clear
+  definition and typology, which are outlined. The theoretical advantages of
+  peer tutoring are discussed and the research on peer tutoring in schools
+  briefly considered. The substantial existing research on the effectiveness of
+  the many different types and formats of peer tutoring within colleges and
+  universities is then reviewed. Much is already known about the effectiveness
+  of some types of peer tutoring and this merits wider dissemination to
+  practitioners. Directions for future research are indicated.%
+  }
+  \verb{doi}
+  \verb 10.1007/BF00138870
+  \endverb
+  \field{issn}{0018-1560, 1573-174X}
+  \field{number}{3}
+  \field{pages}{321\bibrangedash 345}
+  \field{shortjournal}{High Educ}
+  \field{shorttitle}{The effectiveness of peer tutoring in further and higher
+  education}
+  \field{title}{The effectiveness of peer tutoring in further and higher
+  education: A typology and review of the literature}
+  \verb{url}
+  \verb http://link.springer.com/article/10.1007/BF00138870
+  \endverb
+  \field{volume}{32}
+  \field{langid}{english}
+  \verb{file}
+  \verb Snapshot:/Users/dturek/Library/Application Support/Zotero/Profiles/mb0t
+  \verb xt09.default/zotero/storage/6X5NWCX7/login.html:text/html
+  \endverb
+  \field{journaltitle}{Higher Education}
+  \field{month}{10}
+  \field{year}{1996}
+  \field{urlday}{07}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{Wood2005}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Wood}{W.}%
+     {Eileen}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mueller}{M.}%
+     {Julie}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Willoughby}{W.}%
+     {Teena}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Specht}{S.}%
+     {Jacqueline}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Deyoung}{D.}%
+     {Ted}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WE+1}
+  \strng{fullhash}{WEMJWTSJDT1}
+  \field{labelyear}{2005}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  Fifty‐four elementary and secondary school teachers participated in
+  focus‐group discussions and completed a survey to examine barriers and
+  supports to computer integration. Although teachers used computers at home
+  and school, they were not wholly comfortable with the technology. Familiarity
+  with computers predicted greater comfort with technology and greater comfort
+  was related to greater integration in the classroom. Thematic analysis of the
+  focus groups yielded six major themes, including issues related to: support,
+  teachers, context and access, students, computer hardware and software
+  problems, and external or other priorities. The discussion of computer
+  integration also inspired substantial emotional responses on the part of
+  teachers. Together, the survey and focus‐group findings yielded a framework
+  for identifying individual and environmental issues which impact on computer
+  integration.%
+  }
+  \verb{doi}
+  \verb 10.1080/14636310500186214
+  \endverb
+  \field{issn}{1463-631X}
+  \field{number}{2}
+  \field{pages}{183\bibrangedash 206}
+  \field{shortjournal}{Educ. Commun. Inf.}
+  \field{shorttitle}{Teachers' Perceptions}
+  \field{title}{Teachers' Perceptions: barriers and supports to using
+  technology in the classroom}
+  \verb{url}
+  \verb http://dx.doi.org/10.1080/14636310500186214
+  \endverb
+  \field{volume}{5}
+  \verb{file}
+  \verb Snapshot:/Users/dturek/Library/Application Support/Zotero/Profiles/mb0t
+  \verb xt09.default/zotero/storage/223B3ZBR/login.html:text/html
+  \endverb
+  \field{journaltitle}{Education, Communication \& Information}
+  \field{day}{01}
+  \field{month}{01}
+  \field{year}{2005}
+  \field{urlday}{10}
+  \field{urlmonth}{07}
+  \field{urlyear}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
